@@ -1,0 +1,208 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  background: #59fc98;
+}
+
+header .contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .contenedor .menu {
+  text-align: right;
+  padding: 30px 20px;
+}
+
+header .contenedor .menu a {
+  text-decoration: none;
+  color: white;
+  margin: 20px 30px;
+}
+
+.main .acerca-de {
+  width: 100%;
+  background-color: blue;
+}
+
+.main .acerca-de .contenedor {
+  width: 80%;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+
+.main .acerca-de .contenedor .foto {
+  margin-top: -80px;
+}
+
+.main .acerca-de .contenedor .texto .titulo {
+  color: #413d3d;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main .trabajos {
+  width: 100%;
+  background: #e2e2e2;
+}
+
+.main .trabajos .contenedor {
+  padding: 50px 0px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .trabajos .contenedor .titulo {
+  color: #413d3d;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo {
+  width: 24%;
+  margin-bottom: 50px;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .thumb img {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .nombre {
+  color: #413d3d;
+  font-weight: 700;
+}
+
+.main .trabajos .contenedor .contenedor-trabajos .trabajo .descripcion .categoria {
+  font-size: 12px;
+}
+
+footer .contacto {
+  width: 100%;
+  margin: 50px 0px;
+}
+
+footer .contacto .contenedor {
+  padding: 50px 0px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .contacto .contenedor .titulo {
+  color: #413d3d;
+  margin-bottom: 20px;
+}
+
+footer .contacto .contenedor .formulario {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contacto .contenedor .formulario input[type="text"],
+footer .contacto .contenedor .formulario input[type="email"],
+footer .contacto .contenedor .formulario textarea {
+  margin: 10px 0px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: 2px solid #a4a4a4;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .contacto .contenedor .formulario input[type="text"]:focus,
+footer .contacto .contenedor .formulario input[type="email"]:focus,
+footer .contacto .contenedor .formulario textarea:focus {
+  outline: 0;
+  border: 2px solid #3294e4;
+}
+
+footer .contacto .contenedor .formulario input[type="text"]:hover,
+footer .contacto .contenedor .formulario input[type="email"]:hover,
+footer .contacto .contenedor .formulario textarea:hover {
+  border: 2px solid #3294e4;
+}
+
+footer .contacto .contenedor .formulario input[type="text"],
+footer .contacto .contenedor .formulario input[type="email"] {
+  width: 49%;
+}
+
+footer .contacto .contenedor .formulario textarea {
+  width: 100%;
+}
+
+footer .contacto .contenedor .formulario input[type="submit"] {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3294e4;
+  color: #fff;
+  font-weight: 600;
+}
+
+footer .contacto .contenedor .formulario input[type="submit"]:focus {
+  outline: 0;
+}
+
+footer .contacto .contenedor .formulario input[type="submit"]:hover {
+  background-color: #318ad3;
+}
+
+footer .social {
+  background-color: #2f5ec4;
+}
+
+footer .social .contenedor {
+  padding: 50px 0px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .social .contenedor a {
+  font-size: 30px;
+  margin: 0px 30px;
+  color: #fff;
+}
+
+footer .social .contenedor .coder {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  font-family: monospace;
+}
+/*# sourceMappingURL=estilos.css.map */

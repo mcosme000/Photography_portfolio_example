@@ -1,0 +1,74 @@
+
+$colorPrimario: #413d3d    
+footer
+    .contacto
+        width: 100%
+        margin: 50px 0px
+        .contenedor
+            padding: 50px 0px
+            width: 80%
+            margin: 0 auto
+            text-align: center
+            .titulo
+                color: $colorPrimario
+                margin-bottom: 20px
+            .formulario
+                width: 90%
+                margin: 0 auto
+                display: flex
+                flex-flow: wrap
+                justify-content: space-between
+                align-items: center
+
+                input[type="text"],
+                input[type="email"],
+                textarea
+                    margin: 10px 0px
+                    padding: 15px 20px
+                    border-radius: 5px
+                    border: 2px solid #a4a4a4
+                    font-family: "Open Sans", sans-serif
+                    &:focus
+                        outline: 0
+                        border: 2px solid #3294e4
+                    &:hover
+                        border: 2px solid #3294e4
+
+                input[type="text"],
+                input[type="email"]
+                    width: 49%
+
+                textarea
+                    width: 100%
+
+                input[type="submit"]
+                    display: inline-block
+                    margin: 0 auto
+                    padding: 15px 50px
+                    border-radius: 10px
+                    border: none
+                    background-color: #3294e4
+                    color: #fff
+                    font-weight: 600
+                    &:focus
+                        outline: 0
+                    &:hover
+                        background-color: #318ad3
+
+    .social
+        background-color: #2f5ec4
+        .contenedor
+            padding: 50px 0px
+            width: 80%
+            margin: 0 auto
+            text-align: center
+            a
+                font-size: 30px
+                margin: 0px 30px
+                color: #fff
+            .coder
+                margin-top: 20px
+                font-size: 12px
+                color: #fff
+                font-weight: 300
+                font-family: monospace

@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  size: 16px;
+  background-color: #fff;
+}
+
+/* DIV CONTENEDOR. Su función es centrar los contenidos de la página. 
+Es un div muy importante que deberíamos tener en todas nuestras páginas. */
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Esto lo que hace es que los elementos que salgan del contenedor, se van a ocultar, no vamos a poder verlos*/
+}
+
+/* ---- ---- HEADER ---- ---- */
+
+header {
+  background-image: url("https://64.media.tumblr.com/c11121094863d2e4cdf621d1076fc7c3/022c6acd2e3b38e9-c1/s1280x1920/0eb0a542db7054dec8c092ddb781dca6b3c90a39.jpg"); /* si no carga la imagen, se usa el color de fondo*/
+  background-repeat: no-repeat;
+  max-height: 600px;
+}
+
+header .menu {
+  margin: 20px;
+  text-align: right;
+}
+
+header .menu a {
+  margin: 0px 20px;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 9px;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+header .menu a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+header .contenedor-texto {
+  display: flex;
+  /* aquí usamos flexbox para centrar el contenedor con nuestro nombre 
+  Si no usamos flexbox, sería mucho más difícil*/
+  margin: 190px 0;
+  align-content: center;
+  justify-content: center;
+}
+
+header .contenedor-texto .texto {
+  border: 2px solid rgba(233, 233, 233, 0.5);
+  border-radius: 3px;
+  background-color: rgba(233, 233, 233, 0.5);
+  display: inline-block;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+header .contenedor-texto .texto h1,
+header .contenedor-texto .texto h2 {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+header .contenedor-texto .texto .nombre {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+/* ---- ---- MAIN > ACERCA DE ---- ---- */
+
+/* Anteriormente habíamos puesto la propiedad de overflow.hidden a todos los contenedores, 
+PERO SOLO EN EL CONTENEDOR DE MAIN vamos a poner overflow.visible para que la foto del perfil pueda
+estar encima del header!!! Así evito usar z-index o cualquier otra cosa rara. ¡¡Así es fácil!! */
+.main .contenedor {
+  overflow: visible;
+}
+
+.main {
+  text-align: center;
+}
+
+.main .acerca-de .foto {
+  margin-top: -60px;
+}
+
+.main .acerca-de .foto img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.main .acerca-de .texto {
+  font-size: 16px;
+  margin: 40px auto;
+}
+
+.main .acerca-de .texto .titulo {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: rgb(56, 115, 182);
+}
+.main .acerca-de .texto p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.bold {
+  color: rgb(56, 115, 182);
+  font-weight: 600;
+}
+
+/* ---- ---- MAIN > TRABAJOS ---- ---- */
+
+.main .trabajos {
+  background-color: #f2f2f2;
+  padding: 60px 0px;
+}
+
+.main .trabajos .contenedor .titulo {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.contenedor-trabajos {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+/* primero definimos el tamaño de los contendores .trabajo
+estos incluyen el div.thumb (que tiene la foto) y el div.descripcion (que contiene el texto)*/
+.contenedor-trabajos .trabajo {
+  width: 24%;
+  margin-bottom: 40px;
+}
+
+/* va a ocupar el 100% del contenedor padre, que es .trabajo */
+.contenedor-trabajos .trabajo .thumb {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* va a ocupar el 100% del contenedor padre, que es .thumb */
+.contenedor-trabajos .trabajo .thumb img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+.contenedor-trabajos .trabajo .descripcion .nombre {
+  font-weight: 400px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.contenedor-trabajos .trabajo .descripcion .categoria {
+  font-size: 10px;
+  text-align: left;
+}
+
+/* ---- ---- FOOTER > FORMULARIO ---- ---- */
+
+footer .contacto {
+  padding: 30px 0px;
+}
+
+footer .contacto .contenedor {
+  text-align: center;
+}
+
+footer .contacto .contenedor .titulo {
+  /* !A los titulos les damos las mismas propiedades! */
+  font-size: 25px;
+  font-weight: 400;
+  margin: 30px;
+  color: #000;
+}
+
+footer .contacto .contenedor form {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: #a4a4a4;
+  font: "Open Sans";
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 49%;
+  margin: 10px 0px;
+}
+
+form textarea {
+  width: 100%;
+  height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: 0;
+}
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form textarea:hover {
+  border: 2px solid rgb(56, 115, 182);
+}
+
+footer .contacto .contenedor .formulario .boton {
+  margin: 10px auto;
+  padding: 15px 30px;
+  background-color: rgb(134, 192, 240);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+footer .contacto .contenedor .formulario .boton:hover {
+  background-color: rgb(97, 152, 197);
+  cursor: pointer;
+}
+
+footer .contacto .contenedor .formulario .boton:focus {
+  outline: 0;
+}
+
+/* ---- ---- FOOTER > SNS ---- ---- */
+
+footer .social {
+  background-color: #5a8bb9;
+  text-align: center;
+  width: 100%;
+  padding: 60px;
+}
+
+footer .social .contenedor {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .social .contenedor a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  width: 100px;
+  display: block;
+  padding: 15px 0px;
+}
+
+footer .social .pagecoder .coder {
+  font-size: 12px;
+  font-style: italic;
+  font-family: monospace;
+  color: #fff;
+}
+
+/* ---- ---- RESPONSIVE con mediaqueries ---- ---- */
+
+@media screen and (max-width: 800px) {
+  header .menu {
+    text-align: center;
+  }
+
+  .main .trabajos .contenedor .contenedor-trabajos .trabajo {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .contenedor-texto .texto .nombre {
+    font-size: 30px;
+  }
+  header .contenedor-texto .texto .profesion {
+    font-size: 18px;
+  }
+
+  .main .acerca-de .contenedor .texto p {
+    width: 250px;
+  }
+}

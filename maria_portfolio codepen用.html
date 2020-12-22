@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ¡Con esta etiqueta script ya tengo "instalado" font awesome en mi código! -->
+    <script src="https://kit.fontawesome.com/8013b0f68f.js" crossorigin="anonymous"></script>
+    <!-- -->
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>Codepen</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!--  Tengo el header que abarca el 100% de la página
+        y después tengo el div.contenedor que abarca 1000px de ancho. 
+        Va a estar centrado en nuestra página  -->
+      <div class="contenedor">
+        <nav class="menu">
+          <a href="">Acerca de</a>
+          <a href="">Trabajos</a>
+          <a href="">Contacto</a>
+        </nav>
+
+        <div class="contenedor-texto">
+          <div class="texto">
+            <h1 class="nombre">Mochitto</h1>
+            <h2 class="profesion">Fotógrafa</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECCIÓN MAIN que contienne "acerca de" y "trabajos"-->
+    <div class="main">
+      <section class="acerca-de">
+        <div class="contenedor">
+          <div class="foto">
+            <img src="https://64.media.tumblr.com/574823b462f4633ff8ce7445c4a1f5b9/022c6acd2e3b38e9-93/s500x750/966245012ba3353b7f5f51b4e403437762955bec.jpg" onerror="" alt="Maria Cosmen" width="115" />
+          </div>
+
+          <div class="texto">
+            <h3 class="titulo">Un poquito sobre mi...</h3>
+            <p>
+              Viviendo en <span class="bold">Japón</span> desde hace 6 años. Fotografío mi día a día, y últimamente obsesionada con la <span class="bold">fotografía analógica</span>. 
+              Me gusta comer cosas ricas y buscar <span class="bold">sitios retro</span> ✨💖
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="trabajos">
+        <div class="contenedor">
+          <h3 class="titulo">Mis fotografías</h3>
+          <div class="contenedor-trabajos">
+            <!-- aquí van todas mis fotos de ejemplo -->
+
+            <div class="trabajo">
+              <!-- trabajo 1-->
+              <div class="thumb one">
+                  <img src="https://64.media.tumblr.com/badcf87e0fdc6728e11850609ca1862f/022c6acd2e3b38e9-74/s500x750/88292ff9908766d09359313ae8511f6e28a12544.jpg" alt="">
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Señor y tren</p>
+                <p class="categoria">Tokyo, 2019</p>
+              </div>
+            </div>
+
+            <div class="trabajo">
+              <!-- trabajo 2-->
+              <div class="thumb two">
+                <img src="https://64.media.tumblr.com/7e2d164ba8c119a7f4e07b612ebacafa/022c6acd2e3b38e9-b0/s500x750/7a6d7532fd042ad0c8d2736f8a273c9ac7914d4c.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Maneki neko</p>
+                <p class="categoria">Tokyo, 2019</p>
+              </div>
+            </div>
+
+            <div class="trabajo three">
+              <!-- trabajo 3-->
+              <div class="thumb">
+                <img src="https://64.media.tumblr.com/77dda0395845445391431b094844d626/022c6acd2e3b38e9-23/s500x750/e80fa6129ee37a800135042e174c2ad0881e3fcd.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Flores</p>
+                <p class="categoria">Kanazawa, 2018</p>
+              </div>
+            </div>
+
+            <div class="trabajo four">
+              <!-- trabajo 4-->
+              <div class="thumb">
+                <img src="https://64.media.tumblr.com/b20ed2a8afb38ec9e42f94ab240f4d17/022c6acd2e3b38e9-95/s500x750/239cc32b5c8245f39f9f4c058ba6a207d3a5e174.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Verano</p>
+                <p class="categoria">Kanazawa, 2018</p>
+              </div>
+            </div>
+
+            <div class="trabajo five">
+              <!-- trabajo 5-->
+              <div class="thumb ">
+                <img src="https://64.media.tumblr.com/254f71b7b623c71e65e3031af6255d30/022c6acd2e3b38e9-92/s500x750/a686a4c87b86cd2c3fc97a5cf8a6c3ba5aa10272.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Templo Sensoji</p>
+                <p class="categoria">Tokyo, 2018</p>
+              </div>
+            </div>
+
+            <div class="trabajo six">
+              <!-- trabajo 6-->
+              <div class="thumb">
+                <img src="https://64.media.tumblr.com/3549a45fe1e345e25b8c36d7cf7bed71/022c6acd2e3b38e9-aa/s500x750/c62519249e4b706ead148e423bc0e19171240bce.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Neon nights</p>
+                <p class="categoria">Tokyo, 2020</p>
+              </div>
+            </div>
+
+            <div class="trabajo seven">
+              <!-- trabajo 7-->
+              <div class="thumb">
+                <img src="https://64.media.tumblr.com/cb4cd993c8439ab45f13a9ee819ff0c9/022c6acd2e3b38e9-60/s500x750/72fae532d66e24e6598a4f93cec031a7d3bc82e9.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">La luz</p>
+                <p class="categoria">Tokyo, 2020</p>
+              </div>
+            </div>
+
+            <div class="trabajo eight">
+              <!-- trabajo 8-->
+              <div class="thumb">
+                <img src="https://64.media.tumblr.com/1e8e6a5faa0b3bfa18190f2b4c62ee55/022c6acd2e3b38e9-24/s500x750/ba4f063c4cac27a3fe25f6d322e70a7134bc3d6c.jpg" alt="" />
+              </div>
+              <div class="descripcion">
+                <p class="nombre">Pide un deseo</p>
+                <p class="categoria">Kanazawa, 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+    <section class="contacto"> <!-- siempre creamos la sección y dentro ccreamos el div contenedor. 
+    El div.contenedor va a tener el mismo ancho y lo vamos a aplicar a todos los div de la página-->
+        <div class="contenedor">
+          <h3 class="titulo">Contacto</h3>
+          <form action="" class="formulario">
+            <input type="text" placeholder="Nombre" name="nombre" required />
+            <input type="email" placeholder="Correo" name="correo" required />
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Enviar" class="boton" />
+          </form>
+        </div>  
+    </section>
+
+    <section class="social">
+        <div class="contenedor">
+            <a href="" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="" class="twitter"><i class="fab fa-twitter"></i></i></a>
+            <a href="" class="codepen"><i class="fab fa-codepen"></i></i></a>
+            <a href="" class="github"><i class="fab fa-github"></i></i></a>
+            <p class="coder">Página creada por Mochitto</p>
+        </div>
+    </section>
+      </div>
+    </footer>
+  </body>
+</html>
